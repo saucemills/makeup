@@ -17,7 +17,11 @@
       const paragraph = document.getElementById('paragraph')
 
       heading.addEventListener('click', function () {
-        paragraph.style.display = 'flex'
+        if (paragraph.style.display === 'none') {
+          paragraph.style.display = 'flex'
+        } else {
+          paragraph.style.display = 'none'
+        }
       })
     </script>
   </body>
